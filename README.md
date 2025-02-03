@@ -1,18 +1,25 @@
 # Wordpress API Client
 
-A Python client for interacting with the WordPress REST API (Posts). This library simplifies common operations such as creating, updating, retrieving, deleting, and listing posts. It is built on top of the `requests` library and integrates logging with `trackrace` (or falls back to Python’s built-in logging).
+A Python client for interacting with the WordPress REST API (Posts). This library simplifies common operations such as
+creating, updating, retrieving, deleting, and listing posts. It is built on top of the `requests` library and integrates
+logging with `trackrace` (or falls back to Python’s built-in logging).
 
 ## Overview
 
-The **Wordpress API Client** provides an easy-to-use interface for working with WordPress posts via the REST API. It supports all the fields and parameters defined in the [WordPress REST API Documentation for Posts](https://developer.wordpress.org/rest-api/reference/posts/), making it a robust solution for developers who need to integrate WordPress functionalities into their Python applications.
+The **Wordpress API Client** provides an easy-to-use interface for working with WordPress posts via the REST API. It
+supports all the fields and parameters defined in
+the [WordPress REST API Documentation for Posts](https://developer.wordpress.org/rest-api/reference/posts/), making it a
+robust solution for developers who need to integrate WordPress functionalities into their Python applications.
 
 ### Key Features
 
 - **Create, Update, Delete, and Retrieve Posts:** Manage posts with a simple API.
 - **Filtering and Querying:** Use various parameters (e.g., date, author, categories, tags) to filter and search posts.
 - **Authentication:** Supports basic authentication using Base64 encoding.
-- **Logging:** Integrated logging via `trackrace` (or standard logging as a fallback) for debugging and monitoring API calls.
-- **Comprehensive Field Support:** Explicitly supports all fields outlined in the official WordPress REST API documentation.
+- **Logging:** Integrated logging via `trackrace` (or standard logging as a fallback) for debugging and monitoring API
+  calls.
+- **Comprehensive Field Support:** Explicitly supports all fields outlined in the official WordPress REST API
+  documentation.
 
 ## Installation
 
@@ -59,7 +66,8 @@ print("Posts List:", posts_list)
 
 ## API Reference
 
-For a complete list of parameters and details on how to use each endpoint, please refer to the [WordPress REST API Documentation for Posts](https://developer.wordpress.org/rest-api/reference/posts/).
+For a complete list of parameters and details on how to use each endpoint, please refer to
+the [WordPress REST API Documentation for Posts](https://developer.wordpress.org/rest-api/reference/posts/).
 
 ## Testing
 
@@ -69,9 +77,14 @@ The library includes a set of tests using Python's `unittest` framework. To run 
 python -m unittest discover tests
 ```
 
+## PyPi
+
+Url to PyPi [Link](https://pypi.org/project/wordpress-api-client).
+
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [GitHub](https://github.com/nnevdokimov/wordpress_api_client).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a
+pull request on [GitHub](https://github.com/nnevdokimov/wordpress_api_client).
 
 ## License
 
@@ -79,4 +92,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions or support, please open an issue on the GitHub repository or contact [nick.evdokimovv@gmail.com](mailto:nick.evdokimovv@gmail.com).
+For questions or support, please open an issue on the GitHub repository or
+contact [nick.evdokimovv@gmail.com](mailto:nick.evdokimovv@gmail.com).
