@@ -47,16 +47,16 @@ class WordpressClient:
         logger.info("WordpressPoster initialized for base URL: %s", self.base_url)
 
     @staticmethod
-    def _prepare_text_field(field: Optional[Union[str, Dict[str, Any]]]) -> Optional[Dict[str, Any]]:
+    def _prepare_text_field(field: Optional[Union[str, Dict[str, Any]]]) -> Optional[str]:
         """
-        Converts a text field (title, content, excerpt) to a dictionary format with the ‘rendered’ key.
-        If the field is already a dictionary, returns it unchanged.
+        Converts a text field (title, content, excerpt) to a plain string.
+        If the field is already a string, returns it unchanged.
         """
         if field is None:
             return None
         if isinstance(field, str):
-            return {"rendered": field}
-        return field
+            return field
+        return field.get("rendered", "")
 
     @staticmethod
     def _format_query_param(value: Any) -> Any:
@@ -70,7 +70,7 @@ class WordpressClient:
 
     def create_post(
             self,
-            post_endpoint: Optional[str] = '',
+            post_endpoint: Optional[str] = 'posts',
             date: Optional[str] = None,
             date_gmt: Optional[str] = None,
             slug: Optional[str] = None,
