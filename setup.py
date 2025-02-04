@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="wordpress_api_client",
-    version="0.1.0",
+    version="0.1.1",
     description="A Python client for interacting with the WordPress REST API.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -12,7 +12,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests",
-        "trackrace",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
